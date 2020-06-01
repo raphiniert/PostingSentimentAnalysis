@@ -4,8 +4,7 @@ This project provides a command line interface, written in python3, to extract p
 It's part of the seminar 'Der "Historikerbericht" und die Historisierung der FPÖ' (see https://ufind.univie.ac.at/de/course.html?lv=070086&semester=2020S) held at the University of Vienna. 
 The coding style for this project is quick'n'dirty.
 It's not performance optimized and there are no unit tests, sanity or security checks, but it gets the job done.
-I highly recommend to create backups of the resulting sqlite database files if you are done crawling.
-This is a private repository at least until I passed the seminar. 
+I highly recommend to create backups of the resulting sqlite database files if you are done crawling. 
 
 ## prerequisites
 
