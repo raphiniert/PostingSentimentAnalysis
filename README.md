@@ -1,16 +1,17 @@
 # PostingStentimentAnalysis
 
-This project provides a command line interface, written in python3, to extract postings from https://derstandard.at (and only from derstandard.at, other online newspapers are not supported) and apply a sentiment analysis to the extracted data.
+This project provides a command line interface, written in python3, to extract postings from https://derstandard.at (only derstandard.at, other online newspapers are not supported), to provide basic statistics and to apply a sentiment analysis to the extracted data.
 It's part of the seminar 'Der "Historikerbericht" und die Historisierung der FPÖ' (see https://ufind.univie.ac.at/de/course.html?lv=070086&semester=2020S) held at the University of Vienna. 
 The coding style for this project is quick'n'dirty.
 It's not performance optimized and there are no unit tests, sanity or security checks, but it gets the job done.
 I highly recommend to create backups of the resulting sqlite database files if you are done crawling.
+This is a private repository at least until I passed the seminar. 
 
 ## prerequisites
 
 * Working python ≥ 3.7 installation (https://www.python.org/downloads/)
 * Google Chrome installed (https://www.google.com/chrome/)
-* copy `chromedriver` file in bin/chromedriver matching installed version (https://sites.google.com/a/chromium.org/chromedriver/downloads)
+* Downloaded `chromedriver` file matching the installed Chrome version (https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 ### download project and copy chromedriver
 If you are familiar with git and the command line run:
@@ -73,6 +74,18 @@ url_list = [
 ```
 
 ### usage
+
+Make sure the virtual environment is activated before you run the folloing code.
+You should see (venv) at somewhere in your terminal's current line.
+Activate it by entering the project folder and run:
+```shell script
+. venv/bin/activate
+```
+
+After you're done you can just close the terminal or deactivate it by running:
+```shell script
+deactivate
+```
 
 After specifying the urls run the python script:
 ```shell script
@@ -149,3 +162,15 @@ python statistics.py
 ## Sentiment Analysis
 
 TODO
+
+## troubleshooting
+
+#### `SyntaxError: invalid syntax` or `ModuleNotFoundError: No module named 'selenium'`
+Make sure your virtual environment is enabled.
+You can enable it by running:
+```shell script
+. venv/bin/activate
+```
+
+#### `selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH.`
+Make sure the `chromedriver` file is located in the `bin` folder within the project folder.
