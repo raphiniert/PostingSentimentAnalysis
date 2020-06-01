@@ -1,4 +1,4 @@
-# PostingStentimentAnalysis
+# PostingSentimentAnalysis
 
 This project provides a command line interface, written in python3, to extract postings from https://derstandard.at (only derstandard.at, other online newspapers are not supported), to provide basic statistics and to apply a sentiment analysis to the extracted data.
 It's part of the seminar 'Der "Historikerbericht" und die Historisierung der FPÖ' (see https://ufind.univie.ac.at/de/course.html?lv=070086&semester=2020S) held at the University of Vienna. 
