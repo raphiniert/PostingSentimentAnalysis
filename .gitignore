@@ -10,6 +10,6 @@ venv/
 .idea
 
 # project specific
-bin/
-log/
+bin/chromedriver
+log/*.log
 postings.db
