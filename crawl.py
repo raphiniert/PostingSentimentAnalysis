@@ -31,7 +31,7 @@ parser.add_argument(
 
 # logging
 FORMAT = "%(asctime)-15s %(levelname)s %(message)s"
-logging.basicConfig(filename="log/standard_postings.log", format=FORMAT, level=20)
+logging.basicConfig(filename=f"log/{datetime.datetime.now()}_standard_postings.log", format=FORMAT, level=20)
 logger = logging.getLogger("postings")
 
 # create console handler and set level to debug
