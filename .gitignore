@@ -13,3 +13,7 @@ venv/
 bin/chromedriver
 log/*.log
 postings.db
+postings_krone.db
+
+# dependencies
+sentiws/
