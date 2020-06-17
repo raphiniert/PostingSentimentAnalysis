@@ -20,7 +20,7 @@ class Article(Base):
 
     article_id = Column(Integer, primary_key=True)
     article_title = Column(String(1024), nullable=False)
-    article_url = Column(String(256), unique=True)
+    article_url = Column(String(512), unique=True)
     article_publication_date = Column(DateTime, nullable=False)
 
     def __init__(self, article_title, article_url, article_publication_date):
