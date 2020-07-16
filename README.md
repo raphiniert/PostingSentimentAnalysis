@@ -8,9 +8,9 @@ I highly recommend to create backups of the resulting sqlite database files if y
 
 ## prerequisites
 
-* Working python ≥ 3.7 installation (https://www.python.org/downloads/)
+* Working python 3.7+ installation (https://www.python.org/downloads/)
 * Google Chrome installed (https://www.google.com/chrome/)
-* Downloaded `chromedriver` file matching the installed Chrome version (https://sites.google.com/a/chromium.org/chromedriver/downloads)
+* Download `chromedriver` file matching your installed Chrome version (https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 ### download project and copy chromedriver
 If you are familiar with git and the command line run:
@@ -74,14 +74,14 @@ url_list = [
 
 ### usage
 
-Make sure the virtual environment is activated before you run the folloing code.
+Make sure the virtual environment is activated before you run the following code.
 You should see (venv) at somewhere in your terminal's current line.
 Activate it by entering the project folder and run:
 ```shell script
 . venv/bin/activate
 ```
 
-After you're done you can just close the terminal or deactivate it by running:
+You can just close the terminal or deactivate the virtual environment by running:
 ```shell script
 deactivate
 ```
@@ -160,7 +160,10 @@ python statistics.py
 
 ## Sentiment Analysis
 
-TODO
+Download the available spaCy pretrained statistical models for the German language.
+```shell script
+python -m spacy download de_core_news_lg
+```
 
 ## troubleshooting
 
