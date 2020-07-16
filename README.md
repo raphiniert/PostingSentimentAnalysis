@@ -165,6 +165,22 @@ Download the available spaCy pretrained statistical models for the German langua
 python -m spacy download de_core_news_lg
 ```
 
+Download the SentiWS (Sentiment Wortschatz) published by the University of Leipzig (https://wortschatz.uni-leipzig.de/en/download).
+Unzip the files and copy the *.txt files into a folder named 'sentiws':
+
+```shell script
+mkdir sentiws
+cp path/to/unziped/folder/*.txt sentiws/
+```
+
+```shell script
+python sentiment.py
+```
+
+```shell script
+python -m spacy download de_core_news_lg
+```
+
 ## troubleshooting
 
 #### `SyntaxError: invalid syntax` or `ModuleNotFoundError: No module named 'selenium'`
