@@ -1,9 +1,7 @@
 # PostingSentimentAnalysis
 
-This project provides a command line interface, written in python3, to extract postings from https://derstandard.at (only derstandard.at, other online newspapers are not supported), to provide basic statistics and to apply a sentiment analysis to the extracted data.
-It's part of the seminar 'Der "Historikerbericht" und die Historisierung der FPÖ' (see https://ufind.univie.ac.at/de/course.html?lv=070086&semester=2020S) held at the University of Vienna. 
+This project provides a command line interface to extract postings from https://derstandard.at (only derstandard.at, other online newspapers are not supported), to provide basic statistics and to apply a sentiment analysis. 
 The coding style for this project is quick'n'dirty.
-It's not performance optimized and there are no unit tests, sanity or security checks, but it gets the job done.
 I highly recommend to create backups of the resulting sqlite database files if you are done crawling. 
 
 ## prerequisites
@@ -26,7 +24,6 @@ In case you aren't familiar with the command line download this project as a .zi
 open it and create two folders, one named `bin` and one named `log`.
 Copy the previously downloaded file `chromedrive` into the `bin` folder.
 Unfortunately, you have to get familiar with the command line anyways to use this tool.
-If you don't know how to enter a folder in a terminal, let me google that for you (https://lmgtfy.com/?q=enter+a+folder+in+terminal&s=d).
 
 ### setup virtual environment and install dependencies
 
@@ -151,7 +148,7 @@ group by users.user_name
 order by cp desc;
 ```
 
-### pre defined statistics
+### some statistics
 
 TODO: print most common and usefuly stats, such as total postings, ratings and users per article, users posting in both articles etc.
 ```shell script
